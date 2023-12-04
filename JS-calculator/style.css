@@ -69,25 +69,23 @@
 }
 
 .keys {
-	background-color: #362930;
+	
 	padding: 1.5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	grid-gap: 1rem;
-	box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+	
 }
 
 .keys .key {
 	position: relative;
 	cursor: pointer;
 	display: block;
-	height: 0;
 	padding-top: 100%;
 	background-color: #2c222d;
 	border-radius: 50%;
 	transition: 0.2s;
-	user-select: none;
     box-shadow: 3px -2px 16px rgba(0, 0, 0, 2);
 }
 
@@ -115,4 +113,10 @@
 
 .keys .key.action span {
 	color: #EB6666;
+}
+hr {
+	width: 200px;
+	margin: auto;
+	border-color: #EB6666;
+
 }
