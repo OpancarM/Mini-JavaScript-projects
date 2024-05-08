@@ -7,98 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calc">
-            <div class="dis">
-                <div class="content">
-                    <div class="input"></div>
-                    <div class="output"></div>
-                </div>
-            </div>
-			<hr>
-            <div class="keys">
-                <div data-key="clear" class="key action" style="background-color: #EB6666;">
-					<span style="color: white;">C</span>
-				</div>
 
-				<div data-key="brackets" class="key action">
-					<span>( )</span>
-				</div>
-
-				<div data-key="%" class="key action">
-					<span>%</span>
-				</div>
-
-				<div data-key="/" class="key operator">
-					<span>÷</span>
-				</div>
-
-				<div data-key="7" class="key">
-					<span>7</span>
-				</div>
-
-				<div data-key="8" class="key">
-					<span>8</span>
-				</div>
-
-				<div data-key="9" class="key">
-					<span>9</span>
-				</div>
-
-				<div data-key="*" class="key operator">
-					<span>x</span>
-				</div>
-
-				<div data-key="4" class="key">
-					<span>4</span>
-				</div>
-
-				<div data-key="5" class="key">
-					<span>5</span>
-				</div>
-
-				<div data-key="6" class="key">
-					<span>6</span>
-				</div>
-
-				<div data-key="-" class="key operator">
-					<span>-</span>
-				</div>
-
-				<div data-key="1" class="key">
-					<span>1</span>
-				</div>
-
-				<div data-key="2" class="key">
-					<span>2</span>
-				</div>
-
-				<div data-key="3" class="key">
-					<span>3</span>
-				</div>
-
-				<div data-key="+" class="key operator">
-					<span>+</span>
-				</div>
-
-				<div data-key="backspace" class="key action">
-					<span>&lt;</span>
-				</div>
-
-				<div data-key="0" class="key">
-					<span>0</span>
-				</div>
-
-				<div data-key="." class="key">
-					<span>.</span>
-				</div>
-				
-				<div data-key="=" class="key operator">
-					<span>=</span>
-				</div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+	<div class= "calc">  
+		<form name = "form1">  	  
+			<!-- This input box shows the button pressed by the user in calculator. -->  
+	  		<input id = "calc" type ="text" name = "answer"> <br> <br>    
+	  		<!-- onclick() function display the number prsses by the user. --> 
+	  		<!-- Display the calculator button on the screen. --> 
+			<input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+	  		<input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+	  		<input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+			<input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+	  		<input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+	  		<input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+			<input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+	  		<input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+			<input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+			<input class="color" type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+	  		<input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+			<input class="color" type = "button" value = "+" onclick = "form1.answer.value += '+' "> 
+			<input class="color" type = "button" value = "." onclick = "form1.answer.value += '.' ">
+	  		<input class="color" type = "button" value = "*" onclick = "form1.answer.value += '*' "> 	
+			<input class="color" type = "button" value = "/" onclick = "form1.answer.value += '/' ">  	  		     
+			<!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+	  		<input class="equal" type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) "> 
+			<!-- Display the Cancel button and erase all data entered by the user. -->  
+	  		<input type = "button" value = "AC" onclick = "form1.answer.value = ' ' " id= "clear" > 		
+		</form>  
+	</div>
+</div>	
     <script src="script.js"></script>
 </body>
 
